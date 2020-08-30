@@ -93,19 +93,6 @@
 		}
 	}
 
-	function sortFormatted(array) {
-		let minLen, minString;
-
-		array.forEach(string => {
-			if (string.length < minLen || !minLen) {
-				minLen = string.length;
-				minString = string;
-			}
-		});
-
-		return minString;
-	}
-
 	async function recompress(string, preFormatted, options, compressNum, compressPower) {
 		const defString = string,
 			defLength = string.length;
